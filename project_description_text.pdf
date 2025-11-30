@@ -1,0 +1,356 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 7450
+>>
+stream
+0.5670000000000001 w
+0 G
+0.58 0.2 0.92 rg
+56.6929133858267775 785.1970866141731449 481.8941732283464034 -8.5039370078740166 re
+f
+BT
+/F2 22 Tf
+25.2999999999999972 TL
+0.122 0.161 0.216 rg
+56.6929133858267775 762.5199212598424765 Td
+(Lecture Transcript) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0.42 0.447 0.502 rg
+56.6929133858267775 739.8427559055118081 Td
+(Audio/Video Transcription) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.612 0.639 0.686 rg
+56.6929133858267775 725.6695275590550409 Td
+(Generated on: 11/12/2025, 11:19:24 AM) Tj
+ET
+0.9 0.91 0.92 RG
+56.6929133858267775 697.3230708661417339 m
+538.5870866141731312 697.3230708661417339 l
+S
+BT
+/F1 10 Tf
+11.5 TL
+0.216 0.255 0.318 rg
+56.6929133858267775 668.9766141732283131 Td
+( Dear all, this is the video that I have been recording for the description of SE302 course. Throughout the) Tj
+T* (semester you will try to put there the corresponding requirements, from this video at least, as well as the) Tj
+T* (design and implementation you will handle. The project description is as follows. I would like you to submit) Tj
+T* (me a desktop application that helps me create a schedule for the exam interval. You know that you will have) Tj
+T* (the corresponding midterm exams in the next coming weeks. So suppose that you have a kind of fixed.) Tj
+T* (number of days as a kind of exam time interval and you have a fixed number of classrooms in the schools) Tj
+T* (and you have a fixed number of courses And in these courses, you have a fixed number of students) Tj
+T* (registered. These fixed numbers are, by the way, available now. The Student Affairs will try to schedule the) Tj
+T* (exam period. But here I give you such a kind of sample data to understand the details. For example, we have) Tj
+T* (the students in the system with their IDs, say, SDD ID 001 through Here, 250 students, and here we have the) Tj
+T* (sample data for the courses. We have 20 courses for the Department of Computer Engineering, you might) Tj
+T* (mention it. And here we have the corresponding classrooms in the school to be assigned within the slots of) Tj
+T* (the exam period for each exam. we have the corresponding number of the seats, the capacities in the) Tj
+T* (classrooms. For this sample data, I suppose that each classroom contains 40 seats and hereby each course) Tj
+T* (will have the number of 40 students equally registered in the corresponding example that's just a kind of) Tj
+T* (sample you might use such a kind of different classrooms with different number of capacities and by the way) Tj
+T* (you might use such different number of course here there are 20 courses for each course there might be) Tj
+T* (different number of students registered as well so these all students and all courses are just an example And) Tj
+T* (here the Student Affairs will use basically the sample data for the classrooms with their capacities and the) Tj
+T* (sample data for the course codes with their registered students. You at least need these two files. And it will) Tj
+T* (be a kind of Windows application and desktop application because I am in the role of student affairs, I am) Tj
+T* (your customer, I will use the system and nobody else. So that's just the kind of desktop application adequate) Tj
+T* (for me. By the way, I need of course some help menus in the application. I as a student affairs, I mean) Tj
+T* (authority, will import the corresponding files into the application. These files will contain at least the) Tj
+T* (corresponding course codes with their registered students and the corresponding classrooms with their) Tj
+T* (capacities. And the program will give the following output. An exam schedule. That's all. So, hereby, the) Tj
+T* (create these files and import into your system. They don't need to manually enter these into your system.) Tj
+T* (Okay, if you make them do this, okay, but not necessary. These student affairs will import these files. If they) Tj
+T* (wanna change these files, okay, they will change the file and then they can re-import. So which means that) Tj
+T* (these data should be created, edited, or in a way maybe removed and re-imported. So here we have the) Tj
+T* (option as a student affairs authority, I have the option to change the data and re-import the file and rerun the) Tj
+T* (program as well. What will be the display result? Say, for each classroom, I would like to see the) Tj
+T* (corresponding exams of the courses. For each student, I would like to see the corresponding exam schedule.) Tj
+T* (For each course, I would like to see the exact time for each assigned exam. And it's, of course, assigned) Tj
+T* (classroom as well. For each day, I would like to see the exams in each slot. Hereby, there are two constraints) Tj
+T* (at least. No two consecutive slots shall be assigned for the same student. So if I have such a number of) Tj
+T* (exams in a day, there I need a break at least in between. And the next second constraint is the number of) Tj
+T* (exams in a day to be assigned for a student is, at most exits. So the number of exams in a day to be) Tj
+T* (assigned for a student shall not exceed two, okay? You can also add some more constraints as well. These) Tj
+T* (are the necessities. So you will try to at least state the requirements at first and you will design later. By the) Tj
+T* (way, if you have any questions further, of course you can ask anytime, remember. So hereby, let's say, This is) Tj
+T* (the way that you would use for the exam period. Of course there might be some different alternatives. For) Tj
+T* (example, you can follow a kind of greedy algorithm. There might be no solution, so you might need to release) Tj
+T* (some constraints. Suppose that the number of the days for the period is 5, let's suppose, and you have four) Tj
+T* (slots in a day, again exception, and you are not able to put the resolution for five days, including four slots in a) Tj
+T* (day, for such a number of exams to be held. So what should you do? Then you shall either say there is no) Tj
+T* (solution or which is not the best, you might put there some other slots in some days. Just an assumption to) Tj
+T* (release a constraint. Or for a student you might just consider doing something as like, releasing its constraint) Tj
+T* (like, no consecutive two exams will be there. Or in a way you can extend the number of days in the interval.) Tj
+T* (So what you cannot change is amongst these alternatives, you cannot change the first constraint. No two) Tj
+T* (consecutive slots shall be assigned for a student. And the second constraint, the number of exams in a day to) Tj
+T* (be assigned for a student shall not exceed two. Okay, so you can, for example, optimization, not a must, but if) Tj
+T* (you have a solution, will it be the best? No, I need a solution, but how would you optimize it? For example,) Tj
+T* (you might balance, share the exams within the interval, let's say exam period, equally. Or you might try to) Tj
+T* (complete the exams within the minimum number of days, another one, or one other alternative, you might) Tj
+T* (use a minimum number of classrooms or a balanced number of classrooms per day, or assigning the very) Tj
+T* (crowded courses or assigning the important or assigning the difficult courses to be held for their exams at the) Tj
+T* (beginning or at the end of the corresponding interval. It's up to you. Okay, so in the classroom, I will welcome) Tj
+T* (your any other further question as well.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 299
+>>
+stream
+0.5670000000000001 w
+0.9 0.91 0.92 RG
+0.9 0.91 0.92 RG
+56.6929133858267775 70.8661417322834666 m
+538.5870866141731312 70.8661417322834666 l
+S
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.612 0.639 0.686 rg
+192.6549999999999443 53.8582677165354653 Td
+(Generated by LectureHelper AI • Powered by Gemini) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R ]
+/Count 2
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+/F6 12 0 R
+/F7 13 0 R
+/F8 14 0 R
+/F9 15 0 R
+/F10 16 0 R
+/F11 17 0 R
+/F12 18 0 R
+/F13 19 0 R
+/F14 20 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+21 0 obj
+<<
+/Producer (jsPDF 3.0.3)
+/CreationDate (D:20251112111924+03'00')
+>>
+endobj
+22 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 23
+0000000000 65535 f 
+0000008141 00000 n 
+0000009966 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000007654 00000 n 
+0000007791 00000 n 
+0000008204 00000 n 
+0000008329 00000 n 
+0000008459 00000 n 
+0000008592 00000 n 
+0000008730 00000 n 
+0000008854 00000 n 
+0000008983 00000 n 
+0000009115 00000 n 
+0000009251 00000 n 
+0000009379 00000 n 
+0000009506 00000 n 
+0000009635 00000 n 
+0000009768 00000 n 
+0000009870 00000 n 
+0000010216 00000 n 
+0000010302 00000 n 
+trailer
+<<
+/Size 23
+/Root 22 0 R
+/Info 21 0 R
+/ID [ <819320BB232625253F804588D6A4AF20> <819320BB232625253F804588D6A4AF20> ]
+>>
+startxref
+10406
+%%EOF
